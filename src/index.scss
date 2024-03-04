@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+$card-width: 50%;
+$border-radius: 7px;
+$button-color: #591698;
+$button-bacground: #ffe600;
+
+body {
+    background: #bbdefb;
+    font-family: "Poppins", sans-serif;
+    padding: 100px 0;
+    .header-button {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        top: 0px;
+        height: 50px;
+        background-color: $button-bacground;
+        margin-bottom: 200px;
+        width: 100%;
+        z-index: 1000;
+    }
+    .heading {
+        font-size: 36px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: $button-color;
+        font-weight: 800;
+    }
+}
+
+.card {
+    background: #fff;
+    width: $card-width;
+    margin-top: 100px;
+    border-radius: $border-radius;
+    transition: 0.2s ease;
+    padding: 40px;
+    &:hover {
+        box-shadow: 0 10px 20px 1px gray;
+        transform: scale(1.03);
+    }
+    img {
+        width: $card-width;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .title {
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 3px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .favourite {
+        font-size: 16px;
+        font-weight: 800;
+        font-family: sans-serif;
+        color: $button-color;
+    }
+}
+.message {
+    font-size: 16px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #591698;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard renders correct 1`] = `
+[
+  <div
+    className="header-button"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <button>
+        Back to dashboard
+      </button>
+    </a>
+  </div>,
+  <div
+    className="container-fluid"
+  >
+    <div
+      className="row text-center mt-5"
+    >
+      <div
+        className="card"
+      >
+        <img
+          alt="title"
+          className="card-img"
+          src="url"
+        />
+        <div
+          className="title"
+        >
+          <span>
+            1
+            :
+          </span>
+          <span>
+             title
+          </span>
+        </div>
+        <div
+          className="favourite"
+        >
+          Marked Favourite
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
