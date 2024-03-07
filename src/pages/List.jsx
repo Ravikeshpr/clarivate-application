@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Loader from "../hooks/useInfiniteScroll";
 import { useEffect } from "react";
 import { useGlobalContext } from "../context";
+import Card from "../coponents/Card/Card";
 import Button from "../coponents/button/Button";
 
 export default function List() {
@@ -31,29 +32,12 @@ export default function List() {
                         data.length > 0 &&
                         data.map((item) => {
                             return (
-                                <div key={item.id} className="card">
-                                    <img
-                                        src={item.url}
-                                        alt={item.title}
-                                        className="card-img"
-                                    />
-                                    <div className="title">
-                                        <span>{item.id}:</span>
-                                        <span>{` ${item.title}`}</span>
-                                    </div>
-                                    {!item.isFavourite ? (
-                                        <Button
-                                            onClick={() =>
-                                                handleAddAsFavourite(item)
-                                            }
-                                            label="Add to favourite"
-                                        ></Button>
-                                    ) : (
-                                        <div className="favourite">
-                                            Marked Favourite
-                                        </div>
-                                    )}
-                                </div>
+                                <Card
+                                    key={item.id}
+                                    item={item}
+                                    handleAddAsFavourite={handleAddAsFavourite}
+                                    type="list"
+                                />
                             );
                         })}
                 </div>

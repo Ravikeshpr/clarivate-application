@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import Button from "../coponents/button/Button";
+import Card from "../coponents/Card/Card";
 
 export default function Dashboard() {
     const { state, dispatch } = useGlobalContext();
@@ -35,17 +36,11 @@ export default function Dashboard() {
                             </div>
                             {data.map((item) => {
                                 return (
-                                    <div key={item.id} className="card">
-                                        <img
-                                            src={item.url}
-                                            alt={item.title}
-                                            className="card-img"
-                                        />
-                                        <div className="title">
-                                            <span>{item.id}:</span>
-                                            <span>{` ${item.title}`}</span>
-                                        </div>
-                                    </div>
+                                    <Card
+                                        key={item.id}
+                                        item={item}
+                                        type="dashboard"
+                                    />
                                 );
                             })}
                         </div>

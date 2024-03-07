@@ -46,6 +46,7 @@ exports[`Dashboard renders correct 1`] = `
                title
             </span>
           </div>
+          <div />
         </div>
       </div>
     </div>

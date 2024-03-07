@@ -39,10 +39,14 @@ exports[`Dashboard renders correct 1`] = `
              title
           </span>
         </div>
-        <div
-          className="favourite"
-        >
-          Marked Favourite
+        <div>
+          <div>
+            <div
+              className="favourite"
+            >
+              Marked Favourite
+            </div>
+          </div>
         </div>
       </div>
     </div>
