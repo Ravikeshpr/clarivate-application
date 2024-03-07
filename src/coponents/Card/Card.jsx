@@ -1,6 +1,5 @@
 import Button from "../button/Button";
 export default function Card({ item, handleAddAsFavourite = () => {}, type }) {
-    console.log("ffffffffffffff", item);
     return (
         <div className="card">
             <img src={item?.url} alt={item?.title} className="card-img" />
